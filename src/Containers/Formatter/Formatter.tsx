@@ -35,7 +35,15 @@ class Formatter extends Component<{ pageTitle: string }> {
 
   formatNumber = (phoneNumber: string) => {
     if (phoneNumber !== null) {
-      // do some magic
+      // 1. split number
+      let numberSplit = phoneNumber.split('');
+      console.log(numberSplit);
+      // 2. remove + and replace with 0
+      let formattedNumber = numberSplit;
+      let replacementValue = ['0'];
+      formattedNumber.splice(0, 3, ...replacementValue);
+      console.log(formattedNumber);
+      // 3. loop though rules matching first number
     } else {
       this.setState({ isError: true, errorMessage: 'Error formatting number' });
     }
