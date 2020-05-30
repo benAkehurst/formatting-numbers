@@ -2,7 +2,6 @@ import * as React from 'react';
 import { Component } from 'react';
 import classes from './Formatter.module.scss';
 
-import formattingRules from '../../Data/formattingRules';
 import numberValidator from '../../Helpers/numberValidator';
 
 import Button from '../../Components/Button/Button';
@@ -12,8 +11,11 @@ import Display from '../../Components/Display/Display';
 class Formatter extends Component<{ pageTitle: string }> {
   state = {
     isError: false,
+    isSuccess: false,
     errorMessage: '',
+    successMessage: '',
     submittedPhoneNumber: '',
+    formattedNumber: '',
   };
 
   inputHandler = (e: any) => {
@@ -29,43 +31,65 @@ class Formatter extends Component<{ pageTitle: string }> {
       ? this.formatNumber(this.state.submittedPhoneNumber)
       : this.setState({
           isError: true,
-          errorMessage: `${this.state.submittedPhoneNumber} is not UK a valid UK Phone number`,
+          errorMessage: `${this.state.submittedPhoneNumber} is not a valid UK Phone number 😢`,
         });
   };
 
   formatNumber = (phoneNumber: string) => {
     if (phoneNumber !== null) {
-      // 1. split number
-      let numberSplit = phoneNumber.split('');
-      console.log(numberSplit);
-      // 2. remove + and replace with 0
-      let formattedNumber = numberSplit;
-      let replacementValue = ['0'];
-      formattedNumber.splice(0, 3, ...replacementValue);
-      console.log(formattedNumber);
-      // 3. loop though rules matching first number
+      // Magic happens here
+      this.setState({
+        isSuccess: true,
+        successMessage: `${this.state.formattedNumber} 🥳`,
+      });
     } else {
       this.setState({ isError: true, errorMessage: 'Error formatting number' });
     }
   };
 
   render() {
-    return (
-      <div className={classes.FormatterWrapper}>
+    const headerSection = (
+      <div className={classes.HeaderWrapper}>
         <h1>{this.props.pageTitle}</h1>
-        <div className={classes.InputWrapper}>
-          <Input
-            placeholder={'Cool Input'}
-            inputChange={(e: any) => this.inputHandler(e)}
-          ></Input>
-          <Button clicked={this.convertNumberFormat}>Check Number</Button>
-        </div>
-        <div className={classes.DisplayWrapper}>
-          {this.state.isError ? (
-            <Display displayType={'error'}>{this.state.errorMessage}</Display>
-          ) : null}
-        </div>
       </div>
+    );
+
+    const inputSection = (
+      <div className={classes.InputWrapper}>
+        <Input
+          placeholder={'Phone Number'}
+          inputChange={(e: any) => this.inputHandler(e)}
+        ></Input>
+        <Button
+          clicked={this.convertNumberFormat}
+          disabled={this.state.submittedPhoneNumber === ''}
+        >
+          Check Number
+        </Button>
+      </div>
+    );
+
+    const displayError = this.state.isError ? (
+      <Display displayType={'error'}>{this.state.errorMessage}</Display>
+    ) : null;
+
+    const displaySuccess = this.state.isSuccess ? (
+      <Display displayType={'success'}>{this.state.successMessage}</Display>
+    ) : null;
+
+    const displaySection = (
+      <div className={classes.DisplayWrapper}>
+        <div className={classes.ErrorDisplay}>{displayError}</div>
+        <div className={classes.SuccessDisplay}>{displaySuccess}</div>
+      </div>
+    );
+
+    return (
+      <main className={classes.FormatterWrapper}>
+        {headerSection}
+        {inputSection}
+        {displaySection}
+      </main>
     );
   }
 }

@@ -1,0 +1,48 @@
+@import '../../variables.scss';
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin box-shadow {
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.FormatterWrapper {
+  @include flex-column();
+  width: 100%;
+  section {
+    width: 100%;
+  }
+  .HeaderWrapper {
+    width: 100%;
+    height: $spacing-112;
+    padding: $spacing-16;
+    background-color: $primary-bg-color;
+    h1 {
+      color: $primary-color;
+    }
+  }
+  .InputWrapper {
+    @include box-shadow();
+    @include flex-column();
+    justify-content: space-evenly;
+    width: 80%;
+    z-index: 10;
+    margin-top: -$spacing-40;
+    padding: $spacing-48;
+    height: $spacing-128;
+    background-color: $secondary-bg-color;
+  }
+  .DisplayWrapper {
+    @include flex-column();
+    margin-top: $spacing-64;
+    max-height: $spacing-128;
+    padding: $spacing-40;
+    font-size: $spacing-32;
+    width: 60%;
+  }
+}
