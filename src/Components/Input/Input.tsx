@@ -3,12 +3,18 @@ import classes from './Input.module.scss';
 
 const input = (props: any) => {
   return (
-    <input
-      className={classes.InputWrapper}
-      type="text"
-      onChange={props.inputChange}
-      placeholder={props.placeholder}
-    ></input>
+    <div className={classes.field}>
+      <input
+        type="text"
+        name="phonenumber"
+        className={classes.input}
+        onChange={props.inputChange}
+        placeholder=" "
+      />
+      <label htmlFor="phonenumber" className={classes.label}>
+        {props.placeholder}
+      </label>
+    </div>
   );
 };
 
