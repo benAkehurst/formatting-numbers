@@ -6,7 +6,7 @@ import App from './App';
 configure({ adapter: new Adapter() });
 
 describe('<App />', () => {
-  let wrapper: HTMLElement;
+  let wrapper: any;
 
   beforeEach(() => {
     wrapper = shallow(<App />);
