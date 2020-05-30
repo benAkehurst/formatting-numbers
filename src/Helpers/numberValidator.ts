@@ -1,7 +1,11 @@
 const numberValidator = (phoneNumber: string) => {
-  // split string
-  // check first 2 numbers after + to match 44
-  // if they dont match return false
-  // else return true
-  return
+  const numberToCheck = phoneNumber.split('');
+  const output = [numberToCheck[1], numberToCheck[2]].join('');
+  if (output !== '44') {
+    return false
+  } else {
+    return true;
+  }
 }
+
+export default numberValidator;
