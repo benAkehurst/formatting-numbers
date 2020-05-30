@@ -1,0 +1,25 @@
+@import '../../variables.scss';
+
+@mixin box-shadow {
+  box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ButtonWrapper {
+  @include box-shadow();
+  width: 50%;
+  height: 3.5rem;
+  font-size: 2rem;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  border-radius: 25rem;
+  background-color: $primary-bg-color;
+  color: white;
+}
+
+.ButtonWrapper:focus {
+  outline: none;
+}
+
+.ButtonWrapper:hover {
+  cursor: pointer;
+}
