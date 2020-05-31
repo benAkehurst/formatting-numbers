@@ -27,7 +27,9 @@ class Formatter extends Component<propTypes> {
     let target = e.target as HTMLInputElement;
     this.setState({
       isError: false,
+      isSuccess: false,
       errorMessage: '',
+      successMessage: '',
       submittedPhoneNumber: target.value,
     });
   };
