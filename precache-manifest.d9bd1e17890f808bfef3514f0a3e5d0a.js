@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "798d39070f07274c5b7ed44a9a9a41f8",
+    "revision": "7353bc513eac184b37e498e3d96a054d",
     "url": "/formatting-numbers/index.html"
   },
   {
-    "revision": "4c91301487c17c6196f2",
+    "revision": "997863048060e8d6f788",
     "url": "/formatting-numbers/static/css/main.c8f371aa.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/formatting-numbers/static/js/2.29545383.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "4c91301487c17c6196f2",
-    "url": "/formatting-numbers/static/js/main.7f2025fe.chunk.js"
+    "revision": "997863048060e8d6f788",
+    "url": "/formatting-numbers/static/js/main.84bfd1eb.chunk.js"
   },
   {
     "revision": "eb6d35b297549c99d068",

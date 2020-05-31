@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/formatting-numbers/static/css/main.c8f371aa.chunk.css",
-    "main.js": "/formatting-numbers/static/js/main.7f2025fe.chunk.js",
-    "main.js.map": "/formatting-numbers/static/js/main.7f2025fe.chunk.js.map",
+    "main.js": "/formatting-numbers/static/js/main.84bfd1eb.chunk.js",
+    "main.js.map": "/formatting-numbers/static/js/main.84bfd1eb.chunk.js.map",
     "runtime-main.js": "/formatting-numbers/static/js/runtime-main.b9ed5bcc.js",
     "runtime-main.js.map": "/formatting-numbers/static/js/runtime-main.b9ed5bcc.js.map",
     "static/js/2.29545383.chunk.js": "/formatting-numbers/static/js/2.29545383.chunk.js",
     "static/js/2.29545383.chunk.js.map": "/formatting-numbers/static/js/2.29545383.chunk.js.map",
     "index.html": "/formatting-numbers/index.html",
-    "precache-manifest.1585e3bd50569b32b4f45fab484d5926.js": "/formatting-numbers/precache-manifest.1585e3bd50569b32b4f45fab484d5926.js",
+    "precache-manifest.d9bd1e17890f808bfef3514f0a3e5d0a.js": "/formatting-numbers/precache-manifest.d9bd1e17890f808bfef3514f0a3e5d0a.js",
     "service-worker.js": "/formatting-numbers/service-worker.js",
     "static/css/main.c8f371aa.chunk.css.map": "/formatting-numbers/static/css/main.c8f371aa.chunk.css.map",
     "static/js/2.29545383.chunk.js.LICENSE.txt": "/formatting-numbers/static/js/2.29545383.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.b9ed5bcc.js",
     "static/js/2.29545383.chunk.js",
     "static/css/main.c8f371aa.chunk.css",
-    "static/js/main.7f2025fe.chunk.js"
+    "static/js/main.84bfd1eb.chunk.js"
   ]
 }
