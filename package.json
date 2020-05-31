@@ -14,6 +14,7 @@
     "@types/react-dom": "^16.9.8",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
+    "gh-pages": "^3.0.0",
     "libphonenumber-js": "^1.7.52",
     "node-sass": "^4.14.1",
     "react": "^16.13.1",
@@ -25,8 +26,12 @@
   "scripts": {
     "start": "react-scripts start",
     "test": "react-scripts test",
-    "reset": "rm -rf node_modules && npm i"
+    "reset": "rm -rf node_modules && npm i",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "build": "react-scripts build"
   },
+  "homepage": "http://benAkehurst.github.io/loopup-numbers",
   "eslintConfig": {
     "extends": "react-app"
   },
