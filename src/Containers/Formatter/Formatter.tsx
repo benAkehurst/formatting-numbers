@@ -9,7 +9,11 @@ import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
 import Display from '../../Components/Display/Display';
 
-class Formatter extends Component<{ pageTitle?: string }> {
+interface propTypes {
+  pageTitle?: string;
+}
+
+class Formatter extends Component<propTypes> {
   state = {
     isError: false,
     isSuccess: false,
@@ -19,11 +23,12 @@ class Formatter extends Component<{ pageTitle?: string }> {
     formattedNumber: '',
   };
 
-  inputHandler = (e: any) => {
+  inputHandler = (e: React.FormEvent<EventTarget>): void => {
+    let target = e.target as HTMLInputElement;
     this.setState({
       isError: false,
       errorMessage: '',
-      submittedPhoneNumber: e.target.value,
+      submittedPhoneNumber: target.value,
     });
   };
 
@@ -59,7 +64,9 @@ class Formatter extends Component<{ pageTitle?: string }> {
       <div className={classes.InputWrapper}>
         <Input
           placeholder={'Phone Number'}
-          inputChange={(e: any) => this.inputHandler(e)}
+          inputChange={(e: React.FormEvent<EventTarget>): void =>
+            this.inputHandler(e)
+          }
         ></Input>
         <Button
           clicked={this.convertNumberFormat}
