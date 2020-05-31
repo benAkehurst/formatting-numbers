@@ -31,7 +31,7 @@
     "deploy": "gh-pages -d build",
     "build": "react-scripts build"
   },
-  "homepage": "http://benAkehurst.github.io/loopup-numbers",
+  "homepage": "https://benAkehurst.github.io/formatting-numbers/",
   "eslintConfig": {
     "extends": "react-app"
   },
