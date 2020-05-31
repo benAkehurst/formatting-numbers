@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/loopup-numbers/static/css/main.c8f371aa.chunk.css",
-    "main.js": "/loopup-numbers/static/js/main.c2bf7ef4.chunk.js",
-    "main.js.map": "/loopup-numbers/static/js/main.c2bf7ef4.chunk.js.map",
-    "runtime-main.js": "/loopup-numbers/static/js/runtime-main.654844bd.js",
-    "runtime-main.js.map": "/loopup-numbers/static/js/runtime-main.654844bd.js.map",
-    "static/js/2.29545383.chunk.js": "/loopup-numbers/static/js/2.29545383.chunk.js",
-    "static/js/2.29545383.chunk.js.map": "/loopup-numbers/static/js/2.29545383.chunk.js.map",
-    "index.html": "/loopup-numbers/index.html",
-    "precache-manifest.55ea9f87fcc4cd99f699af0e19c2d8f6.js": "/loopup-numbers/precache-manifest.55ea9f87fcc4cd99f699af0e19c2d8f6.js",
-    "service-worker.js": "/loopup-numbers/service-worker.js",
-    "static/css/main.c8f371aa.chunk.css.map": "/loopup-numbers/static/css/main.c8f371aa.chunk.css.map",
-    "static/js/2.29545383.chunk.js.LICENSE.txt": "/loopup-numbers/static/js/2.29545383.chunk.js.LICENSE.txt"
+    "main.css": "/formatting-numbers/static/css/main.c8f371aa.chunk.css",
+    "main.js": "/formatting-numbers/static/js/main.7f2025fe.chunk.js",
+    "main.js.map": "/formatting-numbers/static/js/main.7f2025fe.chunk.js.map",
+    "runtime-main.js": "/formatting-numbers/static/js/runtime-main.b9ed5bcc.js",
+    "runtime-main.js.map": "/formatting-numbers/static/js/runtime-main.b9ed5bcc.js.map",
+    "static/js/2.29545383.chunk.js": "/formatting-numbers/static/js/2.29545383.chunk.js",
+    "static/js/2.29545383.chunk.js.map": "/formatting-numbers/static/js/2.29545383.chunk.js.map",
+    "index.html": "/formatting-numbers/index.html",
+    "precache-manifest.1585e3bd50569b32b4f45fab484d5926.js": "/formatting-numbers/precache-manifest.1585e3bd50569b32b4f45fab484d5926.js",
+    "service-worker.js": "/formatting-numbers/service-worker.js",
+    "static/css/main.c8f371aa.chunk.css.map": "/formatting-numbers/static/css/main.c8f371aa.chunk.css.map",
+    "static/js/2.29545383.chunk.js.LICENSE.txt": "/formatting-numbers/static/js/2.29545383.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.654844bd.js",
+    "static/js/runtime-main.b9ed5bcc.js",
     "static/js/2.29545383.chunk.js",
     "static/css/main.c8f371aa.chunk.css",
-    "static/js/main.c2bf7ef4.chunk.js"
+    "static/js/main.7f2025fe.chunk.js"
   ]
 }
