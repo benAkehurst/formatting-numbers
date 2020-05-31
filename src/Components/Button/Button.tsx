@@ -1,7 +1,13 @@
 import * as React from 'react';
 import classes from './Button.module.scss';
 
-const button = (props: any) => {
+interface propTypes {
+  clicked?: any;
+  disabled?: boolean;
+  children?: string;
+}
+
+const button = (props: propTypes) => {
   return (
     <button
       className={classes.ButtonWrapper}

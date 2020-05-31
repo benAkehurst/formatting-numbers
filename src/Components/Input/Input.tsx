@@ -1,7 +1,12 @@
 import React from 'react';
 import classes from './Input.module.scss';
 
-const input = (props: any) => {
+interface propTypes {
+  inputChange?: any;
+  placeholder?: string;
+}
+
+const input = (props: propTypes) => {
   return (
     <div className={classes.field}>
       <input
