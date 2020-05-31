@@ -1,3 +1,9 @@
+@import '../../variables.scss';
+
 .error {
-  color: orangered;
+  color: $error;
+}
+
+.success {
+  color: $success;
 }
