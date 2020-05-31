@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/loopup-numbers/precache-manifest.58b66bc713d4b5304f6b0f7202818d0b.js"
+  "/loopup-numbers/precache-manifest.55ea9f87fcc4cd99f699af0e19c2d8f6.js"
 );
 
 self.addEventListener('message', (event) => {
