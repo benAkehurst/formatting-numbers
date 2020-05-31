@@ -2,6 +2,7 @@ import * as React from 'react';
 import { Component } from 'react';
 import classes from './Formatter.module.scss';
 
+import { parsePhoneNumberFromString } from 'libphonenumber-js';
 import numberValidator from '../../Helpers/numberValidator';
 
 import Button from '../../Components/Button/Button';
@@ -35,12 +36,12 @@ class Formatter extends Component<{ pageTitle: string }> {
         });
   };
 
-  formatNumber = (phoneNumber: string) => {
-    if (phoneNumber !== null) {
-      // Magic happens here
+  formatNumber = (submittedPhoneNumber: string) => {
+    if (submittedPhoneNumber !== null) {
+      const phoneNumber = parsePhoneNumberFromString(submittedPhoneNumber);
       this.setState({
         isSuccess: true,
-        successMessage: `${this.state.formattedNumber} 🥳`,
+        successMessage: `Here's your number - ${phoneNumber?.formatNational()} 🥳`,
       });
     } else {
       this.setState({ isError: true, errorMessage: 'Error formatting number' });
