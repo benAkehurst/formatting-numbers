@@ -9,7 +9,7 @@ import Button from '../../Components/Button/Button';
 import Input from '../../Components/Input/Input';
 import Display from '../../Components/Display/Display';
 
-class Formatter extends Component<{ pageTitle: string }> {
+class Formatter extends Component<{ pageTitle?: string }> {
   state = {
     isError: false,
     isSuccess: false,
@@ -41,7 +41,7 @@ class Formatter extends Component<{ pageTitle: string }> {
       const phoneNumber = parsePhoneNumberFromString(submittedPhoneNumber);
       this.setState({
         isSuccess: true,
-        successMessage: `Here's your number - ${phoneNumber?.formatNational()} 🥳`,
+        successMessage: `Here's your formatted number: ${phoneNumber?.formatNational()} 🥳`,
       });
     } else {
       this.setState({ isError: true, errorMessage: 'Error formatting number' });
@@ -80,8 +80,11 @@ class Formatter extends Component<{ pageTitle: string }> {
 
     const displaySection = (
       <div className={classes.DisplayWrapper}>
-        <div className={classes.ErrorDisplay}>{displayError}</div>
-        <div className={classes.SuccessDisplay}>{displaySuccess}</div>
+        {this.state.isError ? (
+          <div className={classes.ErrorDisplay}>{displayError}</div>
+        ) : (
+          <div className={classes.SuccessDisplay}>{displaySuccess}</div>
+        )}
       </div>
     );
 
