@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/loopup-numbers/static/css/main.c8f371aa.chunk.css",
+    "main.js": "/loopup-numbers/static/js/main.c2bf7ef4.chunk.js",
+    "main.js.map": "/loopup-numbers/static/js/main.c2bf7ef4.chunk.js.map",
+    "runtime-main.js": "/loopup-numbers/static/js/runtime-main.654844bd.js",
+    "runtime-main.js.map": "/loopup-numbers/static/js/runtime-main.654844bd.js.map",
+    "static/js/2.29545383.chunk.js": "/loopup-numbers/static/js/2.29545383.chunk.js",
+    "static/js/2.29545383.chunk.js.map": "/loopup-numbers/static/js/2.29545383.chunk.js.map",
+    "index.html": "/loopup-numbers/index.html",
+    "precache-manifest.58b66bc713d4b5304f6b0f7202818d0b.js": "/loopup-numbers/precache-manifest.58b66bc713d4b5304f6b0f7202818d0b.js",
+    "service-worker.js": "/loopup-numbers/service-worker.js",
+    "static/css/main.c8f371aa.chunk.css.map": "/loopup-numbers/static/css/main.c8f371aa.chunk.css.map",
+    "static/js/2.29545383.chunk.js.LICENSE.txt": "/loopup-numbers/static/js/2.29545383.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.654844bd.js",
+    "static/js/2.29545383.chunk.js",
+    "static/css/main.c8f371aa.chunk.css",
+    "static/js/main.c2bf7ef4.chunk.js"
+  ]
+}
